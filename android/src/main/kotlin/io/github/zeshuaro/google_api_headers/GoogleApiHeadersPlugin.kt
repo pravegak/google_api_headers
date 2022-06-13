@@ -48,11 +48,7 @@ class GoogleApiHeadersPlugin : MethodCallHandler, FlutterPlugin {
                         )
                     }
                 } else {
-                    @Suppress("DEPRECATION")
-                    packageManager.getPackageInfo(
-                        args,
-                        PackageManager.GET_SIGNATURES
-                    ).signatures.forEach { signature -> parseSignature(signature, result) }
+                   
                 }
 
             } catch (e: Exception) {
